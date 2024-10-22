@@ -41,8 +41,3 @@ jobs:
                 url: git@github.com:${{ github.repository }}.git
                 ref: ${{ github.ref }}
               preset: node
-            resources:
-              spot: false
-              cpu: 1.5
-              memory: 0.5
-              replicas: 1
