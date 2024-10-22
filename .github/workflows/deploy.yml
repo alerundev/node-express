@@ -25,6 +25,11 @@ jobs:
           yaml: |
             name: node-express
             app: node@16
+            resources:
+              spot: false
+              cpu: 1
+              memory: 1.5
+              replicas: 2
             options:
               env:
                 - name: NODE_ENV
